@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th>用户注册</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>身份验证-必填信息</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    用户名
+                                </td>
+                                <td>
+                                    <input type="text" name="name" required="required"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    密&nbsp;码
+                                </td>
+                                <td>
+                                    <input type="password" name="pwd">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    密码确认
+                                </td>
+                                <td>
+                                    <input type="password" name="pwd_again">
+                                </td>
+                            </tr>
+
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>身份信息-选填信息</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    所在城市
+                                </td>
+                                <td>
+                                    <input type="text" required="required" name="liveCity"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   工作单位
+                                </td>
+                                <td>
+                                    <input type="text" required="required" name="work_company"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    家庭住址
+                                </td>
+                                <td>
+                                    <input type="text" required="required" name="address"/>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>其他个人信息</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    性别
+                                </td>
+                                <td>
+                                   <select name="sex">
+                                       <option value="boy" >男孩</option>
+                                       <option value="girl">女孩</option>
+                                   </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    爱好
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="hobby" value="music"/>音乐&nbsp;&nbsp;&nbsp;
+                                    <input type="checkbox" name="hobby" value="sport"/>体育&nbsp;&nbsp;&nbsp;
+                                    <input type="checkbox" name="hobby" value="computer" checked/>计算机&nbsp;&nbsp;&nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    喜欢的公司
+                                </td>
+                                <td>
+                                    <input type="radio" value="baidu" name="company"/>百度&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" value="msChina" name="company"/>微软中国&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" value="ggChina" name="company"/>谷歌中国&nbsp;&nbsp;&nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    个人简介
+                                </td>
+                                <td>
+                                    <textarea cols="35" rows="10" name="personDescription"></textarea>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </fieldset>
+
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <input type="submit" value="提交您的资料" />
+                    <input type="reset" value="重新填写资料" />
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <input type="button" value="无效按钮" disabled>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
