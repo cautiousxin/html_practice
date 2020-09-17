@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS_HOMEWORK_3</title>
+		<style>
+			.table{
+				width: 300px;
+				height: 180px;
+				border: solid 1px gray;
+				padding: 0px;
+				background-image: url(../../image2/bg1.jpg);
+				
+				background-repeat: repeat;
+			}
+			.td{
+				text-align: center;
+				font-size: 14px;
+			}
+			#text1,#text2{
+				width: 150px;
+				height: 32px;
+				border: solid 1px black;
+				border-radius: 5px;
+			}
+			#text1:hover,#text2:hover{
+				border:dashed orange 1px;
+				cursor: default;
+				
+			}
+			#text1:focus,#text2:focus{
+				background-color: lightyellow;
+			}
+			#text1{
+				background-image: url(../../image2/head.png);
+				background-repeat: no-repeat;
+				padding-left:32px;
+			}
+			#text2{
+				background-image: url(../../image2/keyboard.png);
+				background-repeat: no-repeat;
+				padding-left: 32px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<table class="table">
+				<tr>
+					<th colspan="2" style="font-size: 18px;">用户登录</th>
+				</tr>
+				<tr>
+					<td style="width: 30%;" class="td">用户名:</td>
+					<td class="td"><input type="text" name="username" id="text1"/></td>
+				</tr>
+				<tr>
+					<td class="td">密码:</td>
+					<td class="td"><input type="password" name="pwd" id="text2"/></td>
+				</tr>
+				<tr>
+					<th colspan="2"><img src="../../image2/regbtn.jpg"/></th>
+				</tr>
+			</table>
+		</form>
+		
+		
+	
+	</body>
+</html>
