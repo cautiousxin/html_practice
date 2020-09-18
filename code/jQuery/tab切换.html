@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    	.d{
+    		clear: left;
+    		width: 150px;
+    		height: 100px;
+    	}
+    	
+    	 ul li{
+    	 	float: left;
+    		list-style:none;
+    		margin-left: 30px;
+    	}
+    	.d1{
+    		background-color: red;
+    	}
+    	.d2{
+			background-color: #339900;
+    		display: none;
+    	}
+    	.d3{
+			background-color: aqua;
+    		display: none;
+    	}
+    </style>
+    <script src="../js/jquery-1.11.0.min.js"></script>
+   
+    <script>
+    	$(function () {
+			$("li").click(function () {
+				var index = $(this).index();
+				//alert(index)
+
+
+				var $div = $("div").eq(index);
+
+				$(this).css({
+					"color":$div.css("background-color")
+				});
+
+				!$("li").not($(this)).css({
+					"color":"black"
+				});
+
+				$div.show();
+				$("div").not($div).hide();
+
+			})
+		})
+    	
+    	
+    	
+    </script>
+    
+</head>
+<body>
+	<ul>
+		<li style="color: red;">tab1</li>
+		<li>tab2</li>
+		<li>tab3</li>
+	</ul>
+	
+	<div class="d d1"></div>
+	<div class="d d2"></div>
+	<div class="d d3"></div>
+	
+	
+</body>
+</html>

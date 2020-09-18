@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function () {
+            $(":button").click(function () {
+                $(".d").show();
+                $(".d1").css({"background-color":"lightgreen"})
+                $(".d2").css({"background-color":"lightgreen"})
+            });
+        });
+
+
+    </script>
+    <style>
+        .d{
+            border: solid 1px;
+            width: 100px;
+            height: 100px;
+        }
+        .d1{
+            display: none;
+        }
+        .d2{
+            display: none;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="d d1">中国万岁</div>
+    <div class="d d2">世界万岁</div>
+    <div class="d d3">宇宙万岁</div>
+    <input type="button" value="显示并且变颜色"/>
+</body>
+</html>

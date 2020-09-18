@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function () {
+            $(".btn").click(function () {
+                var str = $(":text").val();
+               //alert(str)
+
+
+                //对具有相同类名的标签进行迭代
+                $(".city").each(function () {
+                    var city = $(this).val();
+                    if(city==str){
+                        $(this).prop("checked","true");
+
+                    }
+                });
+
+            });
+
+
+        });
+
+
+    </script>
+
+</head>
+<body>
+    请输入城市：<input type="text" /><br/>
+    城市复选框：<br/>
+    <input type="checkbox" class="city" value="北京"/>北京&nbsp;&nbsp;
+    <input type="checkbox" class="city" value="南京"/>南京&nbsp;&nbsp;
+    <input type="checkbox" class="city" value="上海"/>上海&nbsp;&nbsp;<br/>
+    <input type="button" value="判断" class="btn">
+
+
+</body>
+</html>
