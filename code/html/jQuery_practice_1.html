@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function () {
+            $(".s1").mouseenter(function () {
+                $(".s1").css({"color":"#0066FF"})
+                $(".d1").css({"r-style":"solid","width":"50px","height":"50px","background-color":"#0066FF"})
+            })
+            $(".s1").mouseleave(function () {
+                $(".s1").css({"color":"black"})
+                $(".d1").css({"width":"0px","height":"0px"});
+            })
+        })
+        $(function () {
+            $(".s2").mouseenter(function () {
+                $(".s2").css({"color":"green"})
+                $(".d2").css({"r-style":"solid","width":"50px","height":"50px","background-color":"green"})
+            })
+            $(".s2").mouseleave(function () {
+                $(".s2").css({"color":"black"})
+                $(".d2").css({"width":"0px","height":"0px"});
+            })
+        })
+
+        $(function () {
+
+            $(".s3").mouseenter(function () {
+                $(".s3").css({"color":"red"})
+                $(".d3").css({"r-style":"solid","width":"50px","height":"50px","background-color":"red"})
+            })
+            $(".s3").mouseleave(function () {
+                $(".s3").css({"color":"black"})
+                $(".d3").css({"width":"0px","height":"0px"});
+            })
+        })
+
+
+
+    </script>
+    <!--<style>
+        .d1{
+            border-style: solid;
+            width: 50px;
+            height: 50px;
+            background-color: #0066FF;
+        }
+
+    </style>-->
+</head>
+<body>
+    <span class="s1">tab1</span>
+    <div class="d1"></div>
+
+    <span class="s2">tab2</span>
+    <div class="d2"></div>
+
+    <span class="s3">tab3</span>
+    <div class="d3"></div>
+
+</body>
+</html>

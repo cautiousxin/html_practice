@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .d{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+
+        .d1{
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            border-style: solid;
+            border-color: transparent transparent white white;
+            border-width: 70px 150px;
+        }
+
+        .d2{
+            position: absolute;
+            right: -400px;
+            bottom: 0px;
+            border-style: solid;
+            border-color: transparent teal teal transparent;
+            border-width: 70px 130px;
+
+           /* opacity: 0;*/
+            transition: all 3s linear;
+        }
+        img:hover ~.d2{
+            right: 0px;
+            opacity: 1;
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+   <div class="d">
+       <img src="../image2/file1.jpg">
+       <div class="d1"></div>
+       <div class="d2"></div>
+   </div>
+</body>
+</html>
